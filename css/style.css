@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet');
 
+:root {
+    --portuguese-green: #006600;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -32,7 +36,7 @@ p {
 }
 
 img {
-    /* width: 100%; */
+    width: 100%;
 }
 
 /* Navbar */
@@ -61,8 +65,10 @@ img {
     margin: 0 5px;
 }
 
+
+/* green before #28a745 */
 .navbar a:hover {
-    border-bottom: #28a745 2px solid;
+    border-bottom: var(--portuguese-green) 2px solid;
 }
 
 .navbar ul {
@@ -70,7 +76,17 @@ img {
 }
 
 .navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-weight: 400;
+}
+
+.navbar .logo img {
+    max-width: 41px;
+    height: auto;
+    padding-right: 10px;
 }
 
 /* Header */
