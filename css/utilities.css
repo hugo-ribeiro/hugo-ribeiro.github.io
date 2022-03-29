@@ -12,7 +12,7 @@
     display: inline-block;
     padding: 10px 30px;
     color: #fff;
-    background-color: #28a745; 
+    background-color: #28a745;
     border: none;
     border-radius: 5px;
 }
@@ -21,27 +21,31 @@
     opacity: 0.9;
 }
 
-.btn-primary, .bg-primary {
+.btn-primary,
+.bg-primary {
     background: #28a745;
     color: #fff;
 }
 
-.btn-secondary, .bg-secondary {
+.btn-secondary,
+.bg-secondary {
     background: #0284d0;
     color: #fff;
 }
 
-.btn-dark, .bg-dark {
+.btn-dark,
+.bg-dark {
     background: #333;
     color: #fff;
 }
 
-.btn-light, .bg-light {
+.btn-light,
+.bg-light {
     background: #f4f4f4;
     color: #333;
 }
 
-.btn-outline{
+.btn-outline {
     background: transparent;
     border: 1px solid white;
 }
@@ -55,7 +59,7 @@
     height: 100%;
 }
 
-.flex-items > div {
+.flex-items>div {
     padding: 20px;
 }
 
@@ -78,7 +82,7 @@
     flex: 1;
 }
 
-.flex-columns .column .column-1, 
+.flex-columns .column .column-1,
 .flex-columns .column .column-2 {
     height: 100%;
 }
@@ -146,5 +150,3 @@
     max-width: 25%;
     padding: 5px 4px;
 }
-
-

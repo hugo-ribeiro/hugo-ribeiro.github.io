@@ -2,6 +2,7 @@
 
 :root {
     --portuguese-green: #006600;
+    --light-blue-background: #E5F2FA;
 }
 
 * {
@@ -44,7 +45,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #333;
+    background-color: #333;
     color: #fff;
     opacity: 0.8;
     width: 100%;
@@ -55,20 +56,14 @@ img {
     transition: 0.5s;
 }
 
-.navbar.top {
-    background: transparent;
-}
-
 .navbar a {
     color: #fff;
     padding: 10px 20px;
     margin: 0 5px;
 }
 
-
-/* green before #28a745 */
 .navbar a:hover {
-    border-bottom: var(--portuguese-green) 2px solid;
+    border-bottom: #28a745 2px solid;
 }
 
 .navbar ul {
@@ -84,7 +79,7 @@ img {
 }
 
 .navbar .logo img {
-    max-width: 41px;
+    max-width: 50px;
     height: auto;
     padding-right: 10px;
 }
@@ -92,30 +87,39 @@ img {
 /* Header */
 
 .hero {
-    background: url('../images/home/showcase.jpg') no-repeat center center/cover;
-    height: 100vh;
+    /* background: url('../images/home/showcase.jpg') no-repeat center center/cover; */
+    height: 70px;
     position: relative;
     color: #fff;
 }
 
-.hero .content {
+.info-message {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%;
-    padding: 0 20px;
+    height: calc(100vh - 70px);
+    background-color: var(--light-blue-background);
+    padding: 20px;
 }
 
-.hero .content h1 {
+.info-message h1 {
     font-size: 55px;
 }
 
-.hero .content p {
+.info-message p {
     font-size: 23px;
     max-width: 600px;
     margin: 20px 0 30px;
+}
+
+.info-message a {
+    color: #28a745;
+}
+
+.info-message a:hover {
+    border-bottom: #28a745 2px solid;
 }
 
 .hero::before {
@@ -270,7 +274,7 @@ img {
 }
 
 @media(max-height: 400px) {
-    .hero .content h1 {
+    .hero .info-message h1 {
         padding-top: 50px;
     }
 }
