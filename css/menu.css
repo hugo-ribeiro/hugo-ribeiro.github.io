@@ -1,0 +1,156 @@
+:root {
+    --light-blue-background: #E5F2FA;
+    --menu-speed: 0.75s;
+    --side-menu-width: 175px;
+}
+
+.logo .menu-button {
+    width: 0px;
+    transition: width 0.4s ease;
+
+}
+
+.logo .toggler {
+    display: none;
+}
+
+.logo .hamburger {
+    display: none;
+}
+
+/* Hamburger line */
+.logo .hamburger>div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Hamburger lines top & bottom */
+.logo .hamburger>div:before,
+.logo .hamburger>div:after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.logo .hamburger>div:after {
+    top: 10px;
+}
+
+/*  Toggler animation */
+.logo .toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+/* Turns hamburger lines into x */
+.logo .toggler:checked+.hamburger>div:before,
+.logo .toggler:checked+.hamburger>div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* rotate checked on hover */
+.logo .toggler:checked:hover+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+/* Show menu */
+.menu-button .toggler:checked~.side-menu {
+    visibility: visible;
+}
+
+.menu-button .toggler:checked~.side-menu>div {
+    /* max-height: scale(1); */
+    height: calc(100vh - 70px);
+    transition-duration: var(--menu-speed);
+}
+
+.side-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: var(--side-menu-width);
+    height: calc(100% - 70px);
+    visibility: hidden;
+    overflow: hidden;
+    font-weight: 400;
+    transition: all 0.4s ease;
+}
+
+.side-menu>div {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    height: 0;
+    transition: height 0.4s ease;
+}
+
+.side-menu>div>ul {
+    display: block;
+}
+
+.side-menu>div>ul>li {
+    list-style: none;
+    padding: 1.5rem 0.5rem;
+    float: right;
+}
+
+.side-menu>div>ul>li>a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+@media (min-width: 1047px) {
+
+    .side-menu {
+        display: none;
+        transition: all 0.4s ease;
+    }
+}
+
+@media (max-width: 1048px) {
+    .logo .menu-button {
+        width: 50px;
+        transition: width 0.4s ease;
+    }
+
+    .logo .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0.3rem;
+        left: 0.3rem;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+        background: #333;
+    }
+
+    .logo .toggler {
+        display: inline;
+        position: absolute;
+        top: 0.3rem;
+        left: 0.3rem;
+        z-index: 2;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}

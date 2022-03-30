@@ -2,3 +2,5 @@
 - links to separate websides
 - contact site
 - favicon
+- disclaimer
+- seo
