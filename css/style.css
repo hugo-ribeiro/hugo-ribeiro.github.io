@@ -2,6 +2,9 @@
 
 :root {
     --green: #28a745;
+    --header-height: 70px;
+    --dark-grey: #333;
+    --max-width: 1100px;
 }
 
 * {
@@ -12,8 +15,21 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background: var(--light-blue-background);
+    color: var(--dark-grey);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: var(--header-height) auto 0;
+    padding: 0 2rem;
+    overflow: hidden;
+    background-color: var(--light-blue-background);
+}
+
+.card {
     background: #fff;
-    color: #333;
+    padding: 1rem;
 }
 
 ul {
@@ -21,7 +37,7 @@ ul {
 }
 
 a {
-    color: #333;
+    color: var(--dark-grey);
     text-decoration: none;
 }
 
@@ -43,7 +59,7 @@ img {
 .navbar {
     position: fixed;
     width: 100%;
-    height: 70px;
+    height: var(--header-height);
     top: 0px;
     display: flex;
     align-items: center;
@@ -92,7 +108,7 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: calc(200vh);
+    height: 100vh;
     background-color: var(--light-blue-background);
     padding: 20px;
 }
@@ -107,8 +123,7 @@ img {
     margin: 20px 0 30px;
 }
 
-.info-message a,
-a.current {
+.info-message a, a.current {
     color: var(--green);
 }
 
@@ -116,25 +131,70 @@ a.current {
     border-bottom: #28a745 2px solid;
 }
 
+/* contact page */
+
+.contact-page {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 3rem 0;
+    gap: 2rem;
+    grid-template-areas: 
+    "header header"
+    "address map";
+}
+
+.contact-title {
+    grid-area: header;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact-address {
+    grid-area: address;
+    padding: 1.5rem;
+}
+
+.contact-address h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+.contact-address i {
+    margin-right: 5px;
+}
+
+.contact-address p {
+    padding: 0;
+    line-height: 1rem;
+}
+
+.contact-address a {
+    color: #ace0fe;
+}
+
+.contact-address a:hover {
+    border-bottom: #ace0fe 2px solid;;
+}
+
+.contact-map {
+    grid-area: map;
+}
+
 @media (max-width: 1048px) {
     .navbar>nav {
         display: none;
     }
-}
 
-/* .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    .contact-page {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "address"
+            "map";
+        text-align: center;
+    }
 }
-
-.hero * {
-    z-index: 2;
-} */
 
 /* Icons */
 .icons {

@@ -1,5 +1,4 @@
-:root {
-    --light-blue-background: #E5F2FA;
+.menu-button {
     --menu-speed: 0.75s;
     --side-menu-width: 175px;
     --green: #28a745;
