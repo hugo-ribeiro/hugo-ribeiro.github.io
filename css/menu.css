@@ -2,6 +2,7 @@
     --light-blue-background: #E5F2FA;
     --menu-speed: 0.75s;
     --side-menu-width: 175px;
+    --green: #28a745;
 }
 
 .logo .menu-button {
@@ -112,6 +113,10 @@
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
+}
+
+.side-menu>div>ul>li>a.current {
+    color: var(--green);
 }
 
 @media (min-width: 1047px) {

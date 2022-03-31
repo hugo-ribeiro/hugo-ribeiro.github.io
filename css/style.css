@@ -107,8 +107,9 @@ img {
     margin: 20px 0 30px;
 }
 
-.info-message a {
-    color: #28a745;
+.info-message a,
+a.current {
+    color: var(--green);
 }
 
 .info-message a:hover {
