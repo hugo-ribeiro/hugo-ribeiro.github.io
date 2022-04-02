@@ -157,7 +157,7 @@ img {
 .contact-address h2 {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--dark-grey);
+    color: var(--green);
 }
 
 .contact-address i {
@@ -170,11 +170,11 @@ img {
 }
 
 .contact-address a {
-    color: #ace0fe;
+    color: var(--green);
 }
 
 .contact-address a:hover {
-    border-bottom: #ace0fe 2px solid;;
+    border-bottom: var(--green) 2px solid;;
 }
 
 .contact-map {

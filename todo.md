@@ -1,4 +1,4 @@
-- contact site
+- publications
 - favicon
 - disclaimer
 - seo
