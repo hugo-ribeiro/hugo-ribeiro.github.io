@@ -1,4 +1,3 @@
-- publications
 - favicon
 - disclaimer
 - seo

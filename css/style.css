@@ -184,11 +184,9 @@ img {
 .publication-page {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
     text-align: center;
     margin: 1rem auto;
-    /* height: calc{100vh; */
 }
 
 .publication-year {
@@ -196,7 +194,6 @@ img {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    /* text-align: center; */
 }
 
 .publication-year> h1 {
@@ -211,14 +208,26 @@ img {
 }
 
 .publication-year .publication-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-self: stretch;
+    align-self: stretch;
     margin: 1rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
     background-color: #fff;
+}
+
+.publication-info {
+    text-align: left;
+}
+
+.publication-info>h4 {
+    font-size: 1.2rem;
+}
+
+.publication-info a, .publication-info i {
+    color: var(--dark-blue);
 }
 
 @media (max-width: 1048px) {
@@ -233,6 +242,13 @@ img {
             "address"
             "map";
         text-align: center;
+    }
+
+    .publication-year .publication-item {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: stretch;
     }
 }
 

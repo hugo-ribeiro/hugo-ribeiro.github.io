@@ -7,7 +7,6 @@
 .logo .menu-button {
     width: 0px;
     transition: width 0.4s ease;
-
 }
 
 .logo .toggler {
@@ -70,7 +69,6 @@
 }
 
 .menu-button .toggler:checked~.side-menu>div {
-    /* max-height: scale(1); */
     height: calc(100vh - 70px);
     transition-duration: var(--menu-speed);
 }
