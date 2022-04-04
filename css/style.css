@@ -252,6 +252,16 @@ img {
     }
 }
 
+@media(max-width: 500px) {
+    .contact-map iframe{
+        width: auto;
+    }
+
+    .contact-map {
+        padding: 0;
+    }
+}
+
 
 /* Footer */
 .footer {

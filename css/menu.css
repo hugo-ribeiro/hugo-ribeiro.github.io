@@ -78,7 +78,7 @@
     top: 70px;
     left: 0;
     width: var(--side-menu-width);
-    height: calc(100% - 70px);
+    min-height: calc(100% - 70px);
     visibility: hidden;
     overflow: hidden;
     font-weight: 400;
@@ -154,5 +154,12 @@
         width: 60px;
         height: 60px;
         opacity: 0;
+    }
+}
+
+@media(max-height: 500px) {
+    .side-menu>div {
+        overflow: scroll;
+        height: 120rem;
     }
 }
