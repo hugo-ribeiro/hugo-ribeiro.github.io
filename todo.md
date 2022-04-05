@@ -1,3 +1,8 @@
+\*\* publications
+
+- arrow go up
+- tags: editors suggestion; open access; rapid communication
+
 - favicon
 - disclaimer
 - seo
@@ -5,4 +10,4 @@
 
 \*\* Issues
 
-- contact page (map) on iPhone too wide
+-
