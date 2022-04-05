@@ -1,0 +1,154 @@
+/* publication styling */
+
+.publication-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.publication-year {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.publication-year> h1 {
+    margin: 1rem;
+    padding-top: 1rem;
+    line-height: 1.3;
+    text-align: left;
+    font-weight: bold;
+    border-top: var(--green) 1px solid;
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+.publication-year .publication-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    background-color: #fff;
+}
+
+.publication-preview {
+    width: 250px;
+    min-height: 150px;
+    align-self: center;
+    justify-self: center;
+    border: var(--dark-blue) 1px groove;
+}
+
+.publication-preview> img {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    padding: 5px;
+    transition: all 0.4s easy;
+}
+
+.publication-info {
+    text-align: left;
+}
+
+.publication-info .categories {
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.publication-info .category {
+    display: inline-block;
+    color: #fff;
+    background-color: var(--dark-blue);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.publication-info>h4 {
+    font-size: 1.2rem;
+}
+
+.publication-info a, .publication-info i {
+    color: var(--dark-blue);
+}
+
+.publication-buttons {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    gap: 1rem;
+    grid-template-areas: 
+    "pdf button"
+    "abstract abstract";
+
+}
+
+.abstract-checkbox {
+    grid-area: button;
+    display: inline;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    width: 7rem;
+    height: 1.4rem;
+    opacity: 0;
+}
+
+.abstract-button {
+    grid-area: button;
+    text-align: center;
+    width: 7rem;
+    padding: 0.2rem;
+    z-index: 1;
+    color: var(--dark-blue);
+}
+
+.pdf-link {
+    grid-area: pdf;
+    align-self: center;
+}
+
+.abstract-area {
+    grid-area: abstract;
+    font-size: 0.9rem;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.abstract-checkbox:checked~.abstract-area {
+    height: 100%;
+    opacity: 1;
+}
+
+input.abstract-checkbox:checked~.abstract-button,
+input.abstract-checkbox:checked~.abstract-button>i{
+    color: #fff;
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+}
+
+@media (max-width: 1048px) {
+    .publication-year .publication-item {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: stretch;
+    }
+}
+
+@media(max-width: 500px) {
+    .publication-info .categories {
+        flex-direction: column;
+    }
+}
