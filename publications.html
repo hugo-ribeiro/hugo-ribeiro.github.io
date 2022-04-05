@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
@@ -55,6 +54,10 @@
     </header>
 
     <section id="publications">
+
+        <button onclick="scrollToTop()" id="scrollUp" title="Go to top">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </button>
         <div class="container">
             <div class="publication-page">
                 <!-- TEMPLATE PUBLICATION RECORD -->
@@ -64,6 +67,10 @@
                             <img src="./images/article-preview/20xx-x.png">
                         </div>
                         <div class="publication-info">
+                            <div class="categories">
+                                <div class="category">Editors' Suggestion</div>
+                                <div class="category">Open access</div>
+                            </div>
                             <h4> !! Title of the paper !!</h4>
                             <p> !! Authors !!</p>
                             <p>
@@ -132,7 +139,6 @@
                             </p>
                     
                             <div class="publication-buttons">
-                                <!-- TODO: add pdf link -->
                                 <a href="https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.2.030306" target="_blank" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
                                 <input type="checkbox" class="abstract-checkbox">
                                 <div class="abstract-button"><i class="fa-solid fa-receipt"></i> Abstract</div>
@@ -145,14 +151,69 @@
                             </div>
                         </div>
                     </div>
+
+                <div id="2021-1" class="publication-item">
+                    <div class="publication-preview">
+                        <img src="./images/article-preview/2021-1.png">
+                    </div>
+                    <div class="publication-info">
+                        <div class="categories">
+                            <div class="category">Open access</div>
+                        </div>
+                        <h4>
+                            Engineering fast high-fidelity quantum operations with constrained interactions
+                        </h4>
+                        <p>T. Figueiredo Roque, Aashish A. Clerk, and Hugo Ribeiro</p>
+                        <p>
+                            <a href="https://www.nature.com/articles/s41534-020-00349-z.pdf" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                npj Quantum Information 7 (1), 1-17
+                            </a>
+                        </p>
+                
+                        <div class="publication-buttons">
+                            <a href="https://www.nature.com/articles/s41534-020-00349-z" target="_blank"
+                                class="pdf-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                            <input type="checkbox" class="abstract-checkbox">
+                            <div class="abstract-button"><i class="fa-solid fa-receipt"></i> Abstract</div>
+                
+                            <div class="abstract-area">
+                                Understanding how to tailor quantum dynamics to achieve the desired evolution is a crucial problem in almost all quantum technologies. Oftentimes an otherwise ideal quantum dynamics is corrupted by unavoidable interactions, and finding ways to mitigate the unwanted effects of such interactions on the dynamics is a very active field of research. Here, we present a very general method for designing high-efficiency control sequences that are fully compatible with experimental constraints on available interactions and their tunability. Our approach relies on the Magnus expansion to find order by order the necessary corrections that result in a high-fidelity operation. In the end finding, the control fields are reduced to solve a set of linear equations. We illustrate our method by applying it to a number of physically relevant problems: the strong-driving limit of a two-level system, fast squeezing in a parametrically driven cavity, the leakage problem in transmon qubit gates, and the acceleration of SNAP gates in a qubit-cavity system.
+                            </div>
+                        </div>
+                    </div>
+                </div>
         
                 <div class="publication-year">
                     <h1> <i class="fa-solid fa-bookmark"></i> 2020</h1>
-                    <div class="publication-item">
-        
-                    </div>
-        
-                    <div class="publication-item">
+                        <div id="2020-1" class="publication-item">
+                            <div class="publication-preview">
+                                <img src="./images/article-preview/2020-1.png">
+                            </div>
+                            <div class="publication-info">
+                                <div class="categories">
+                                    <div class="category">Open access</div>
+                                </div>
+                                <h4>Kinetics of many-body reservoir engineering</h4>
+                                <p>Hugo Ribeiro and Florian Marquardt</p>
+                                <p>
+                                    <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033231"         target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        Phys. Rev. Research 2, 033231
+                                    </a>
+                                </p>
+                                            
+                                <div class="publication-buttons">
+                                    <a href="https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.2.033231" target="_blank" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                                    <input type="checkbox" class="abstract-checkbox">
+                                    <div class="abstract-button"><i class="fa-solid fa-receipt"></i> Abstract</div>
+                                                
+                                    <div class="abstract-area">
+                                        Recent advances illustrate the power of reservoir engineering in applications to many-body systems, such as quantum simulators based on superconducting circuits. We present a framework based on kinetic equations and noise spectra that can be used to understand both the transient and long-time dynamics of many particles coupled to an engineered reservoir
+                                        in a number-conserving way. For the example of a bosonic array, we show that the nonequilibrium steady state can be expressed, in a wide parameter regime, in terms of a modified Bose-Einstein distribution with an energy-dependent temperature.
+                                    </div>
+                                </div>
+                            </div>
                     </div>
         
         
@@ -162,7 +223,7 @@
 
     </section>
 
-
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
