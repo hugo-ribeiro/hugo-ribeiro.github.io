@@ -183,7 +183,7 @@ input.abstract-checkbox:checked~.abstract-button>i{
     padding-left: 10px;
 }
 
-@media (max-width: 1048px) {
+@media (max-width: 760px) {
     .publication-year .publication-item {
         display: flex;
         flex-direction: column;
