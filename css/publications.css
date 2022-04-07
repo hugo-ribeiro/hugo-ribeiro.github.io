@@ -1,11 +1,37 @@
 /* publication styling */
 
+
+.inactive {
+    color: #444;
+}
+
+a {
+    color: var(--dark-blue);
+}
+
+i {
+    margin-right: 3px;
+}
+
+sup {
+    margin-left: -0.5rem;
+    margin-right: 0.2rem;
+}
+
+
+sub {
+    margin-left: -0.2rem;
+}
+
 .publication-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 1rem auto;
+    margin: 1rem auto 5rem auto;
+    padding-bottom: 1rem;
+    border-bottom: var(--green) 1px solid;
+
 }
 
 .publication-year {
@@ -78,13 +104,11 @@
     font-size: 1.2rem;
 }
 
-.publication-info a, .publication-info i {
-    color: var(--dark-blue);
-}
+
 
 .publication-buttons {
     display: grid;
-    grid-template-columns: 3rem auto;
+    grid-template-columns: 3.5rem auto;
     gap: 1rem;
     grid-template-areas: 
     "pdf button"
