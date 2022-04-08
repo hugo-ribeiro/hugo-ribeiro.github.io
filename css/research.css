@@ -1,83 +1,25 @@
-:root {
-    --light-blue-background: #E5F2FA;
-    --green: #28a745;
-    --menu-speed: 0.75s;
-    --blue: #0284d0;
-    --dark-blue: #1D6695 ;
+.research-header {
+    background: url('../images/hardware.jpg') no-repeat center center/cover;
+    height: 30vh;
+    margin-top: var(--header-height);
+    opacity: 0.8;
 }
 
-/* Text colors */
-.text-primary {
-    color: #28a745;
-}
-
-.text-secondary {
-    color: #0284d0;
-}
-
-.py-1 { padding: 1.5rem 0 }
-.py-2 { padding: 2rem 0 }
-.py-3 { padding: 3rem 0 }
-
-.p-1 { padding: 1.5rem }
-.p-2 { padding: 2rem }
-.p-3 { padding: 3rem }
-
-
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 30px;
-    color: #fff;
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
-
-.btn-primary,
-.bg-primary {
-    background: #28a745;
-    color: #fff;
-}
-
-.btn-secondary,
-.bg-secondary {
-    background: #0284d0;
-    color: #fff;
-}
-
-.btn-dark,
-.bg-dark {
-    background: #555;
-    color: #fff;
-}
-
-.btn-light,
-.bg-light {
-    background: #f4f4f4;
-    color: #333;
-}
-
-.btn-outline {
-    background: transparent;
-    border: 1px solid white;
-}
-
-/* Flex items */
-.flex-items {
+.research-title {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     text-align: center;
     height: 100%;
+    padding: 0 20px;
 }
 
-.flex-items>div {
-    padding: 20px;
+.research-header .research-title h1 {
+    /* color: var(--green) */
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 2rem;
 }
 
 /* Flex columns */
@@ -167,3 +109,18 @@
     max-width: 25%;
     padding: 5px 4px;
 }
+
+@media(max-width: 768px) {
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .column,
+    .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+

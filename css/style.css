@@ -3,9 +3,15 @@
 :root {
     --green: #28a745;
     --middle-green: #27893a;
-    --header-height: 70px;
+    --blue: #0284d0;
+    --dark-blue: #1D6695;
     --dark-grey: #333;
+    --light-blue-background: #E5F2FA;
+
+    --header-height: 70px;
     --max-width: 1100px;
+    --menu-speed: 0.75s;
+  
 }
 
 * {
@@ -183,6 +189,11 @@ img {
     grid-area: map;
 }
 
+
+.bg-dark {
+    background: #555;
+    color: #fff;
+}
 
 
 @media (max-width: 1048px) {
