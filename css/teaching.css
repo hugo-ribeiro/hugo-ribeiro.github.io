@@ -1,0 +1,6 @@
+.teaching-container {
+    background: url('../images/teaching.jpg') no-repeat center center/cover;
+    height: 100vh;
+    margin-top: var(--header-height);
+    opacity: 0.8;
+}
