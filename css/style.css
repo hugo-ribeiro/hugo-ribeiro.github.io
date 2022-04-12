@@ -54,6 +54,10 @@ h2 {
     line-height: 1.2;
 }
 
+.text-primary {
+    color: var(--green);
+}
+
 p {
     margin: 10px 0;
 }
@@ -82,7 +86,7 @@ img {
 }
 
 .btn-light, .bg-light {
-    background: #f4f4f4;
+    background: var(--light-blue-background);
     color: #333;
 }
 
@@ -245,7 +249,6 @@ img {
         padding: 0;
     }
 }
-
 
 /* Footer */
 .footer {
