@@ -144,17 +144,26 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 20h;
     background-color: var(--light-blue-background);
     padding: 20px;
 }
 
+.news-picture {
+    width: 200px;
+    height: auto;
+    align-self: center;
+    justify-self: flex-start;
+}
+
 .info-message h1 {
-    font-size: 55px;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--green);
 }
 
 .info-message p {
-    font-size: 23px;
+    font-size: 20px;
     max-width: 600px;
     margin: 20px 0 30px;
 }
