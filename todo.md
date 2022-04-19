@@ -1,4 +1,1 @@
-- favicon
-- disclaimer
-- seo
 - footer
