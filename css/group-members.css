@@ -136,7 +136,10 @@
     background-color: #666;
 }
 
-input.research-checkbox:checked~.research-button {
+input.research-checkbox:hover~.research-button,
+input.research-checkbox:checked~.research-button,
+input.cv-checkbox:checked~.cv-button,
+input.cv-checkbox:hover~.cv-button  {
     background-color: var(--dark-blue);
 }
 
@@ -144,10 +147,6 @@ input.research-checkbox:checked~.research {
     height: 100%;
     opacity: 1;
     padding: 1.5rem 0.5rem 1rem;
-}
-
-input.cv-checkbox:checked~.cv-button {
-    background-color: var(--dark-blue);
 }
 
 input.cv-checkbox:checked~.cv {
@@ -176,4 +175,25 @@ table.cv-table td.year{
     padding-right: 1rem;
     text-align: right;
     font-size: 0.9rem;
+}
+
+@media (max-width: 840px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: flex-start;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: repeat(2, 10rem [col-start]);
+    }
+}
+
+
+@media(max-width: 585px) {
+    .group-member-record{
+        flex-direction: column;
+    }
 }
