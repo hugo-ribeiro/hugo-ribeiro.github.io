@@ -5,9 +5,8 @@
     color: #444;
 }
 
-.dark-blue-date {
+.dark-blue {
     color: var(--dark-blue);
-    border-bottom: var(--dark-blue) 1px solid;
     margin: 0;
 }
 
@@ -195,72 +194,6 @@ input.abstract-checkbox:checked~.abstract-button>i{
     font-size: 1.8rem;
     padding-left: 10px;
 }
-
-.member-category {
-    background-color: var(--green);
-    color: #fff;
-    padding: 0.5rem;
-}
-
-.group-member-record {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: var(--green) 1px solid;
-    padding: 1rem;
-    gap: 2rem;
-}
-
-.group-member-record>img {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 50%;
-}
-
-.group-member-info {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 3fr 3fr 2fr;
-    grid-template-rows: 2rem auto; 
-    gap: 1rem;
-    font-size: 0.9rem;
-    grid-template-areas: 
-    "header header header"
-    "research cv contact";
-}
-
-.group-member-info>p {
-    grid-area: header;
-    text-align: left;
-    align-self: start;
-    line-height: 1.5rem;
-    font-size: 1rem;
-}
-
-.research {
-    grid-area: research;
-    justify-self: start;
-}
-
-.cv {
-    grid-area: cv;
-    justify-self: start;
-}
-
-.contact {
-    grid-area: contact;
-    justify-self: start;
-}
-
-.group-member-info h4 {
-    background-color: var(--green);
-    color: #fff;
-    text-align: left;
-    font-size: 1rem;
-}
-
-
-
 
 @media (max-width: 760px) {
     .publication-year .publication-item {

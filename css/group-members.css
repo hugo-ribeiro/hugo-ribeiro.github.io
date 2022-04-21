@@ -1,0 +1,136 @@
+.member-category {
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.group-member-record {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--green) 1px solid;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.group-member-record>img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.group-member-info {
+    width: 100%;
+} 
+
+.research {
+    padding: 0;
+    padding-top: 1.5rem;
+}
+
+.cv {
+    grid-area: cv;
+    justify-self: start;
+}
+
+.contact {
+    grid-area: contact;
+    justify-self: start;
+}
+
+.group-member-info h4 {
+    background-color: var(--green);
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.group-member-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.research-button:hover {
+    background-color: var(--dark-blue);
+}
+
+.dropdown-area {
+    font-size: 0.9rem;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.research {
+    height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.cv {
+    height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.research-checkbox {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    width: 7rem;
+    height: 1.8rem;
+    opacity: 0;
+}
+
+.research-button {
+    position: absolute;
+    text-align: center;
+    width: 7rem;
+    padding: 0.25rem;
+    z-index: 1;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+.cv-checkbox {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    width: 11rem;
+    height: 1.8rem;
+    opacity: 0;
+}
+
+.cv-button {
+    position: absolute;
+    text-align: center;
+    width: 11rem;
+    padding: 0.25rem;
+    z-index: 1;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #666;
+}
+
+input.research-checkbox:checked~.research-button {
+    background-color: var(--dark-blue);
+}
+
+input.research-checkbox:checked~.research {
+    height: 100%;
+    opacity: 1;
+    padding: 1.5rem 0.5rem 1rem;
+}
+
+input.cv-checkbox:checked~.cv-button {
+    background-color: var(--dark-blue);
+}
+
+input.cv-checkbox:checked~.cv {
+    height: 100%;
+    opacity: 1;
+    padding: 1.5rem 0.5rem 1rem;
+}
