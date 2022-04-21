@@ -96,6 +96,14 @@ img {
     color: #333;
 }
 
+.divider {
+    margin: 0 4rem;
+    padding: 0;
+    height: 3px;
+    border-radius: 5px;
+    background-image: linear-gradient(var(--light-blue-background), #fff, var(--light-blue-background));
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
