@@ -24,26 +24,45 @@
     width: 100%;
 } 
 
-.research {
-    padding: 0;
-    padding-top: 1.5rem;
-}
-
-.cv {
-    grid-area: cv;
-    justify-self: start;
-}
-
 .contact {
-    grid-area: contact;
-    justify-self: start;
+    display: grid;
+    grid-template-columns: 25rem auto;
+    grid-template-areas: 
+    "header header"
+    "contact social";
+    padding-bottom: 1rem;
 }
 
 .group-member-info h4 {
+    grid-area: header;
     background-color: var(--green);
     color: #fff;
     text-align: left;
     font-size: 1rem;
+}
+
+.contact-info {
+    grid-area: contact;
+}
+
+.social {
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+
+.social i {
+    font-size: 1.8rem;
+}
+
+.social a {
+    color: #666;
+}
+
+.social a:hover {
+    border: none;
+    color: var(--dark-blue);
 }
 
 .group-member-buttons {
@@ -64,6 +83,8 @@
 }
 
 .research {
+    padding: 0;
+    padding-top: 1.5rem;
     height: 0;
     opacity: 0;
     transition: all 0.4s ease;
@@ -133,4 +154,26 @@ input.cv-checkbox:checked~.cv {
     height: 100%;
     opacity: 1;
     padding: 1.5rem 0.5rem 1rem;
+}
+
+table .cv-table {
+    width: 100%;
+}
+
+table.cv-table td {
+    vertical-align: top;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+table.cv-table td>p {
+    margin: 0;
+    color: var(--dark-blue);
+}
+
+table.cv-table td.year{
+    padding-right: 1rem;
+    text-align: right;
+    font-size: 0.9rem;
 }
